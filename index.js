@@ -46,7 +46,7 @@ bot.onText(/\/start/, async (msg) => {
   await sendRandomSticker(chatId);
   
   if (!activeChats[chatId]) {
-    activeChats[chatId] = schedule.scheduleJob('*/5 * * * *', async () => {
+    activeChats[chatId] = schedule.scheduleJob('*/10 * * * *', async () => {
       await sendRandomSticker(chatId);
     });
     
