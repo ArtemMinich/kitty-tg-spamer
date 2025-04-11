@@ -1,0 +1,17 @@
+{
+  "name": "kitty-tg-spamer",
+  "version": "1.0.0",
+  "description": "Telegram bot that sends cats from a sticker pack every 5 minutes",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["telegram", "bot", "cats", "stickers"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.64.0",
+    "node-schedule": "^2.1.1"
+  }
+}
