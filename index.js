@@ -1,7 +1,9 @@
 const TelegramBot = require('node-telegram-bot-api');
 const schedule = require('node-schedule');
+const dotenv = require('dotenv');
+dotenv.config();
 
-const token = '7738609078:AAHqilcAKL7d6wbJieydra2iTzNB40Bu4ck';
+const token = process.env.TELEGRAM_BOT_TOKEN;
 
 const bot = new TelegramBot(token, { polling: true });
 
@@ -41,7 +43,7 @@ async function sendRandomSticker(chatId) {
 bot.onText(/\/start/, async (msg) => {
   const chatId = msg.chat.id;
   
-  await bot.sendMessage(chatId, 'Привіт Аня! Я буду надсилати тобі милих котиків кожні 5 хвилин! 😺');
+  await bot.sendMessage(chatId, 'Привіт Аня! Я буду надсилати тобі милих котиків кожні 10 хвилин! 😺');
   
   await sendRandomSticker(chatId);
   
