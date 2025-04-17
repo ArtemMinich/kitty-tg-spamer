@@ -7,11 +7,17 @@
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["telegram", "bot", "cats", "stickers"],
+  "keywords": [
+    "telegram",
+    "bot",
+    "cats",
+    "stickers"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-telegram-bot-api": "^0.64.0",
-    "node-schedule": "^2.1.1"
+    "dotenv": "^16.5.0",
+    "node-schedule": "^2.1.1",
+    "node-telegram-bot-api": "^0.64.0"
   }
 }
